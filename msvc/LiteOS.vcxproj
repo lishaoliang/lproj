@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3E1337B8-E6DB-4CE2-8507-F1337343F03A}</ProjectGuid>
+    <RootNamespace>LiteOS</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\release</OutDir>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\debug</OutDir>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\gcc\los_dispatch_gcc.S" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\gcc\los_hw_exc_gcc.S" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\iar\los_dispatch_iar.S" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\keil\los_dispatch_keil.S" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\keil\los_hw_exc_keil.S" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\los_exc.inc" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\los_exc.ph" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m3\los_exc.inc" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m3\los_exc.ph" />
+    <None Include="..\..\LiteOS\arch\msp430\src\los_dispatch_ccs.asm" />
+    <None Include="..\..\LiteOS\arch\msp430\src\los_dispatch_iar.s43" />
+    <None Include="..\..\LiteOS\build\Makefile" />
+    <None Include="..\..\LiteOS\components\connectivity\lwm2m\core\er-coap-13\LICENSE" />
+    <None Include="..\..\LiteOS\components\connectivity\lwm2m\core\wakaama.cmake" />
+    <None Include="..\..\LiteOS\components\fs\spiffs\README" />
+    <None Include="..\..\LiteOS\kernel\base\core\los_priqueue.inc" />
+    <None Include="..\..\LiteOS\kernel\base\core\los_swtmr.inc" />
+    <None Include="..\..\LiteOS\kernel\base\core\los_sys.inc" />
+    <None Include="..\..\LiteOS\kernel\base\core\los_task.inc" />
+    <None Include="..\..\LiteOS\kernel\base\core\los_tick.inc" />
+    <None Include="..\..\LiteOS\kernel\base\core\los_timeslice.inc" />
+    <None Include="..\..\LiteOS\kernel\base\core\Makefile" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_base.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_err.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_event.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_heap.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_list.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_membox.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_memcheck.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_memory.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_memstat.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_multipledlinkhead.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_mux.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_printf.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_priqueue.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_queue.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_sem.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_slab.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_swtmr.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_sys.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_task.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_tick.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_timeslice.ph" />
+    <None Include="..\..\LiteOS\kernel\base\include\los_typedef.ph" />
+    <None Include="..\..\LiteOS\kernel\base\ipc\los_event.inc" />
+    <None Include="..\..\LiteOS\kernel\base\ipc\los_mux.inc" />
+    <None Include="..\..\LiteOS\kernel\base\ipc\los_queue.inc" />
+    <None Include="..\..\LiteOS\kernel\base\ipc\los_sem.inc" />
+    <None Include="..\..\LiteOS\kernel\base\ipc\Makefile" />
+    <None Include="..\..\LiteOS\kernel\base\Makefile" />
+    <None Include="..\..\LiteOS\kernel\base\mem\bestfit\los_memory.inc" />
+    <None Include="..\..\LiteOS\kernel\base\mem\bestfit\los_multipledlinkhead.inc" />
+    <None Include="..\..\LiteOS\kernel\base\mem\bestfit_little\Makefile" />
+    <None Include="..\..\LiteOS\kernel\base\mem\common\los_memstat.inc" />
+    <None Include="..\..\LiteOS\kernel\base\mem\common\Makefile" />
+    <None Include="..\..\LiteOS\kernel\base\mem\Makefile" />
+    <None Include="..\..\LiteOS\kernel\base\mem\tlsf\Makefile" />
+    <None Include="..\..\LiteOS\kernel\base\misc\Makefile" />
+    <None Include="..\..\LiteOS\kernel\base\om\los_err.inc" />
+    <None Include="..\..\LiteOS\kernel\base\om\Makefile" />
+    <None Include="..\..\LiteOS\kernel\extended\include\los_tickless.ph" />
+    <None Include="..\..\LiteOS\kernel\extended\Makefile" />
+    <None Include="..\..\LiteOS\kernel\extended\tickless\los_tickless.inc" />
+    <None Include="..\..\LiteOS\kernel\Makefile" />
+    <None Include="..\..\LiteOS\LICENSE" />
+    <None Include="..\..\LiteOS\README.md" />
+    <None Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\GCC\Makefile" />
+    <None Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\GCC\startup_stm32f103xe.s" />
+    <None Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\GCC\STM32F103VETx_FLASH.ld" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\los_exc.c" />
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\cortex-m3\los_exc.c" />
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\src\los_hw.c" />
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\src\los_hwi.c" />
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\src\los_hw_tick.c" />
+    <ClCompile Include="..\..\LiteOS\arch\msp430\src\los_hw.c" />
+    <ClCompile Include="..\..\LiteOS\arch\msp430\src\los_hwi.c" />
+    <ClCompile Include="..\..\LiteOS\arch\msp430\src\los_hw_tick.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\agenttiny.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_fota_manager.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_fota_state.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_rpt.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\connection.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\firmware_update.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_access_control.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_binary_app_data_container.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_connectivity_moni.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_connectivity_stat.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_device.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_firmware.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_location.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_security.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_server.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\platform_adapter.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\util_timer.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\flash_manager.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\hmac.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\mqtt_client.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\block1.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\bootstrap.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\data.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\discover.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\er-coap-13\er-coap-13.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\json.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\liblwm2m.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\list.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\lwm2m_utils.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\management.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\objects.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\observe.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\packet.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\registration.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\tlv.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\transaction.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\uri.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\examples\shared\commandline.c" />
+    <ClCompile Include="..\..\LiteOS\components\connectivity\nb_iot\los_nb_api.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\devfs\los_devfs.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\diskio.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\ff.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\ffsystem.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\ffunicode.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\los_fatfs.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\kifs\los_kifs.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\ramfs\los_ramfs.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\los_spiffs.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_cache.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_check.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_gc.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_hydrogen.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_nucleus.c" />
+    <ClCompile Include="..\..\LiteOS\components\fs\vfs\los_vfs.c" />
+    <ClCompile Include="..\..\LiteOS\components\lib\cJSON\cJSON.c" />
+    <ClCompile Include="..\..\LiteOS\components\lib\libc\errno.c" />
+    <ClCompile Include="..\..\LiteOS\components\lib\libc\malloc.c" />
+    <ClCompile Include="..\..\LiteOS\components\lib\libc\newlib_stub.c" />
+    <ClCompile Include="..\..\LiteOS\components\log\atiny_log.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\at_device\emtc_bg36\bg36.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\at_device\gprs_sim900a\sim900a.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\at_device\nb_bc95\bc95.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\at_device\wifi_esp8266\esp8266.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\at_frame\at_api.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\at_frame\at_main.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\lwip\lwip_port\OS\ethernetif.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\lwip\lwip_port\OS\sys_arch.c" />
+    <ClCompile Include="..\..\LiteOS\components\net\sal\atiny_socket.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_priqueue.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_swtmr.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_sys.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_task.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_tick.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_timeslice.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\ipc\los_event.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\ipc\los_mux.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\ipc\los_queue.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\ipc\los_sem.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\bestfit\los_memory.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\bestfit\los_multipledlinkhead.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\bestfit_little\los_heap.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\bestfit_little\los_memory.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\common\los_memcheck.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\common\los_memstat.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\common\los_slab.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\common\los_slabmem.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\membox\los_membox.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\tlsf\los_memory.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\misc\los_misc.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\base\om\los_err.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\extended\tickless\los_tickless.c" />
+    <ClCompile Include="..\..\LiteOS\kernel\los_init.c" />
+    <ClCompile Include="..\..\LiteOS\osdepends\liteos\atiny_osdep.c" />
+    <ClCompile Include="..\..\LiteOS\osdepends\liteos\cmsis\1.0\cmsis_liteos1.c" />
+    <ClCompile Include="..\..\LiteOS\osdepends\liteos\cmsis\2.0\cmsis_liteos2.c" />
+    <ClCompile Include="..\..\LiteOS\osdepends\liteos\cmsis\cmsis_liteos.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cec.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_crc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_eth.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_hcd.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2s.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_irda.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_iwdg.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_mmc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_msp_template.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_nand.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_nor.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pccard.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rtc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rtc_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sd.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_smartcard.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sram.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_timebase_rtc_alarm_template.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_timebase_tim_template.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_usart.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_wwdg.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_adc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_crc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_dac.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_dma.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_exti.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_fsmc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_gpio.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_i2c.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_pwr.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_rcc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_rtc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_sdmmc.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_spi.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_tim.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usart.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_utils.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\at_hal.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\main.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\stm32f1xx_hal_msp.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\stm32f1xx_it.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\system_stm32f1xx.c" />
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\usart.c" />
+    <ClCompile Include="..\..\LiteOS\tests\test_agenttiny\It_Los_Agenttiny.c" />
+    <ClCompile Include="..\..\LiteOS\tests\test_agenttiny\It_Los_Atiny_Bind.c" />
+    <ClCompile Include="..\..\LiteOS\tests\test_agenttiny\It_Los_Atiny_Data_Report.c" />
+    <ClCompile Include="..\..\LiteOS\tests\test_agenttiny\It_Los_Atiny_Init.c" />
+    <ClCompile Include="..\..\LiteOS\tests\test_main.c" />
+    <ClCompile Include="..\..\LiteOS\tests\test_sota\sota_test.c" />
+    <ClCompile Include="..\..\LiteOS\tests\test_suit\agenttiny_test.c" />
+    <ClCompile Include="..\..\LiteOS\tests\test_suit\fs_test.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\LiteOS\arch\arm\arm-m\include\los_exc.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\arm-m\include\los_hw.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\arm-m\include\los_hwi.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\arm-m\include\los_hw_tick.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\arm_common_tables.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\arm_const_structs.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\arm_math.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\cmsis_armcc.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\cmsis_armclang.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\cmsis_compiler.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\cmsis_gcc.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_armv8mbl.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_armv8mml.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm0.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm0plus.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm23.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm3.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm33.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm4.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm7.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_sc000.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_sc300.h" />
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\tz_context.h" />
+    <ClInclude Include="..\..\LiteOS\arch\msp430\include\los_hw.h" />
+    <ClInclude Include="..\..\LiteOS\arch\msp430\include\los_hwi.h" />
+    <ClInclude Include="..\..\LiteOS\arch\msp430\src\ccsmacros.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\agent_list.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_context.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_fota_manager.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_fota_state.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_rpt.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\connection.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\firmware_update.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_comm.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\util_timer.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\flash_manager.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\hmac.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\core\er-coap-13\er-coap-13.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\core\internals.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\core\liblwm2m.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\core\liblwm2m_api.h" />
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\examples\shared\commandline.h" />
+    <ClInclude Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\default\ffconf.h" />
+    <ClInclude Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\diskio.h" />
+    <ClInclude Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\ff.h" />
+    <ClInclude Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\integer.h" />
+    <ClInclude Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\default\spiffs_config.h" />
+    <ClInclude Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs.h" />
+    <ClInclude Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_nucleus.h" />
+    <ClInclude Include="..\..\LiteOS\components\lib\cJSON\cJSON.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\at_device\emtc_bg36\bg36.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\at_device\gprs_sim900a\sim900a.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\at_device\wifi_esp8266\esp8266.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\bpstruct.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\cc.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\cpu.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\epstruct.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\init.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\lib.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\perf.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\sys_arch.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\OS\ethernetif.h" />
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\OS\lwipopts.h" />
+    <ClInclude Include="..\..\LiteOS\include\atiny_error.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_base.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_compiler.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_config.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_err.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_errno.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_event.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_heap.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_list.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_membox.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_memcheck.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_memory.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_mux.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_queue.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_sem.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_slab.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_swtmr.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_sys.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_task.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_tick.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_tickless.h" />
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_typedef.h" />
+    <ClInclude Include="..\..\LiteOS\osdepends\liteos\cmsis\1.0\cmsis_os1.h" />
+    <ClInclude Include="..\..\LiteOS\osdepends\liteos\cmsis\2.0\cmsis_os2.h" />
+    <ClInclude Include="..\..\LiteOS\osdepends\liteos\cmsis\cmsis_os.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103x6.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xg.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cec.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_conf_template.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_crc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_eth.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2s.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_irda.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_iwdg.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nand.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nor.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pccard.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_smartcard.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sram.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_usart.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_wwdg.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_adc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_bus.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_cortex.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_crc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_dac.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_dma.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_exti.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_fsmc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_gpio.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_i2c.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_iwdg.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_pwr.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_rcc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_rtc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_sdmmc.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_spi.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_system.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_tim.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usart.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_utils.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_wwdg.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32_assert_template.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\at_hal.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\main.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\stm32f1xx_hal_conf.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\stm32f1xx_it.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\usart.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\OS_CONFIG\los_builddef.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\OS_CONFIG\los_printf.h" />
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\OS_CONFIG\target_config.h" />
+    <ClInclude Include="..\..\LiteOS\tests\test_agenttiny\test_agenttiny.h" />
+    <ClInclude Include="..\..\LiteOS\tests\test_sota\sota_test.h" />
+    <ClInclude Include="..\..\LiteOS\tests\test_suit\regresstest.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

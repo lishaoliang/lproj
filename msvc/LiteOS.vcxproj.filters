@@ -1,0 +1,1645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="arch">
+      <UniqueIdentifier>{472cb4b3-09f6-4e1d-b184-a2ce5c2e645a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{89ce6c5d-f319-4554-808b-c1892ad02ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{03da3854-5089-4a55-af9e-401fee469876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demos">
+      <UniqueIdentifier>{11ee92fb-5f0a-4a9a-843f-d1dde4b2fda0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{298eec0b-da6c-4218-981a-d835616a9e74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel">
+      <UniqueIdentifier>{ae293fe1-ac0b-40a4-af22-48cb6d2b4601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osdepends">
+      <UniqueIdentifier>{e1c88f69-949b-4b4d-877b-19464f5afda8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets">
+      <UniqueIdentifier>{97ebf928-0bbb-4c36-867c-b19900474067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{9732dcc5-fe35-4241-b398-2b7f10aa508f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm">
+      <UniqueIdentifier>{52a3c9e5-32fd-4c23-b82d-b954056e8307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\msp430">
+      <UniqueIdentifier>{eb21535a-4e7d-489b-951f-c5b45cb028e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m">
+      <UniqueIdentifier>{1df49bbb-560c-4ba2-b985-97af90955f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\common">
+      <UniqueIdentifier>{b5c0643e-e690-4b5b-994e-e761e32fe1f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\cortex-m0">
+      <UniqueIdentifier>{7e912ffc-a31e-45b8-94c5-8707733f9881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\cortex-m3">
+      <UniqueIdentifier>{43963f48-71d2-4ccc-bc22-1dd06cd5dc1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\cortex-m4">
+      <UniqueIdentifier>{c3820659-74da-4237-b98d-c90332283c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\cortex-m7">
+      <UniqueIdentifier>{3ed2cb36-6613-4fcd-b51b-aaa0d6760e5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\include">
+      <UniqueIdentifier>{98522b31-3815-4216-bedb-e0d7ba934530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\src">
+      <UniqueIdentifier>{973e520a-1626-47da-bb21-6f41da3fcb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\cortex-m0\gcc">
+      <UniqueIdentifier>{2082e0da-c587-4930-b892-57d7562c1304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\cortex-m0\iar">
+      <UniqueIdentifier>{5548c910-fa5f-4da8-ad85-cc7e604ba1af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\arm-m\cortex-m0\keil">
+      <UniqueIdentifier>{1b5114f3-1eb3-4b93-8cdc-ac9500bd38e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\arm\common\cmsis">
+      <UniqueIdentifier>{1f463932-f1e8-4b85-90ed-8b53493beb9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\msp430\include">
+      <UniqueIdentifier>{86556135-309c-4566-ad7a-b4f1919ffaae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\msp430\src">
+      <UniqueIdentifier>{835a9004-e7c3-4d8f-b05c-261dd0c3a913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity">
+      <UniqueIdentifier>{c37ce376-2437-4f3c-a6f4-3b7da7497c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs">
+      <UniqueIdentifier>{efd65cc7-32ed-4a9b-a295-b454c6865b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\lib">
+      <UniqueIdentifier>{259b882d-17f0-4082-a0c7-960a17f6f065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\log">
+      <UniqueIdentifier>{01126094-4667-4191-bf28-61ccac8e4d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net">
+      <UniqueIdentifier>{86540b3f-62e3-4baf-9a72-8ce783103d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\ota">
+      <UniqueIdentifier>{41a7b640-5a8c-471a-a510-af7ba8285ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\security">
+      <UniqueIdentifier>{a7c16f75-efcd-4333-9402-0d48970f2a4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\agent_tiny">
+      <UniqueIdentifier>{e9e82220-5b7c-4fe5-b04b-fc8cfe64c350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\lwm2m">
+      <UniqueIdentifier>{7b07e1ed-c5fa-4977-8946-f3f9f2aab0b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\mqtt">
+      <UniqueIdentifier>{6bac8cc0-521d-45e4-a4a3-53f69b742a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\nb_iot">
+      <UniqueIdentifier>{3180494f-ba9a-461d-82ae-80ea30f61b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\agent_tiny\atiny_lwm2m">
+      <UniqueIdentifier>{ebeaf041-82fd-4b58-b94f-d88391b63e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\agent_tiny\atiny_mqtt">
+      <UniqueIdentifier>{352bc777-c68e-4400-a936-db349d476d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\lwm2m\core">
+      <UniqueIdentifier>{ea5cb4d6-bfe7-4aab-9f9d-f57ae8af97e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\lwm2m\examples">
+      <UniqueIdentifier>{07c1ca0e-2f75-4c65-b91f-09350f3775e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\lwm2m\core\er-coap-13">
+      <UniqueIdentifier>{f9902bd6-1b64-4640-af04-7ad36bc64148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\connectivity\lwm2m\examples\shared">
+      <UniqueIdentifier>{b2ebe0a0-bfce-4a13-8254-45af05c953be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\devfs">
+      <UniqueIdentifier>{f2023d7c-bc12-4048-9a8b-586d086d61c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\fatfs">
+      <UniqueIdentifier>{4c1fa1d1-48ca-4ad4-9fe7-a0fb60a5da7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\kifs">
+      <UniqueIdentifier>{1a05d3f3-90af-4902-be54-4eafc35b097b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\ramfs">
+      <UniqueIdentifier>{7e89addd-cdaa-4ea6-9a61-d8716b086115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\spiffs">
+      <UniqueIdentifier>{00108cf7-50be-40f3-a8a6-6581e3ee9c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\vfs">
+      <UniqueIdentifier>{237b2522-e645-4c52-894c-c325e4525ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\fatfs\ff13b">
+      <UniqueIdentifier>{3bc3dfc2-552c-41db-b2fd-98a3bc0757ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\fatfs\ff13b\source">
+      <UniqueIdentifier>{fa946432-2e21-4dd2-a0dd-e53556714767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\fatfs\ff13b\source\default">
+      <UniqueIdentifier>{cadeff8f-d29a-469c-ba91-b5e39a189bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\spiffs\spiffs_git">
+      <UniqueIdentifier>{8e71a890-f8ba-436f-ad17-8487299ef043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\spiffs\spiffs_git\src">
+      <UniqueIdentifier>{6af7629e-6b63-44d8-948d-64e80bd3095a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\fs\spiffs\spiffs_git\src\default">
+      <UniqueIdentifier>{937365e6-a7bc-4398-a9f3-96cdc88ac8a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\lib\libc">
+      <UniqueIdentifier>{c86ab316-9b49-4ba3-b062-01adedc85d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\lib\cJSON">
+      <UniqueIdentifier>{ad4e0428-a4c4-448e-a362-145077635028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\at_device">
+      <UniqueIdentifier>{354bd990-4a37-4c8f-bed3-656fbd4460a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\at_frame">
+      <UniqueIdentifier>{df4766e9-0674-491f-8893-50658059bab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip">
+      <UniqueIdentifier>{3518ab75-373b-476a-a1ad-ef509d3e9707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\sal">
+      <UniqueIdentifier>{eaea0038-0cc2-447f-a03e-adf0e03c4915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\at_device\emtc_bg36">
+      <UniqueIdentifier>{4111679e-4659-4934-9525-9ee66c6d8bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\at_device\gprs_sim900a">
+      <UniqueIdentifier>{63ae5288-624d-4bd2-904c-0d5831af1773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\at_device\nb_bc95">
+      <UniqueIdentifier>{ecb8118b-38dc-4bd5-99af-a43f52cbbe67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\at_device\wifi_esp8266">
+      <UniqueIdentifier>{4ad10776-846c-4ccd-901d-a74b826b3ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip_port">
+      <UniqueIdentifier>{e3ac7f91-565d-4784-9e9a-efee0fbf9a85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip-2.0.3">
+      <UniqueIdentifier>{82edbd7d-f161-4321-ae8b-e8074de30ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\ppp_port">
+      <UniqueIdentifier>{704c76d8-be39-474e-84b2-688740434ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip_port\arch">
+      <UniqueIdentifier>{6705c842-3796-4a79-8688-918af76b98af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip_port\OS">
+      <UniqueIdentifier>{e374ffd3-7242-430a-974e-8793b4e93804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip-2.0.3\src">
+      <UniqueIdentifier>{a7bf01cf-0fe8-40f7-96d9-559d3ba2e921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip-2.0.3\src\api">
+      <UniqueIdentifier>{6fc4b68a-d0a0-477d-acdd-0f22b68693f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip-2.0.3\src\apps">
+      <UniqueIdentifier>{ef0db4c7-127b-4688-abd7-1530c1e138ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip-2.0.3\src\core">
+      <UniqueIdentifier>{c4fe14d3-988a-4d4f-be7f-fb84646191a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip-2.0.3\src\include">
+      <UniqueIdentifier>{3f510de9-8776-4d50-9abe-fb838180b358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components\net\lwip\lwip-2.0.3\src\netif">
+      <UniqueIdentifier>{e4a749b8-f13f-4c18-9049-6b80ecf1c5f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\at_device">
+      <UniqueIdentifier>{5a19e475-3a1d-4719-ace0-9b022052d681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\at_frame">
+      <UniqueIdentifier>{fe1bd480-665b-4c12-bc83-0ffea96f55e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\atiny_lwm2m">
+      <UniqueIdentifier>{20674bbe-6dc1-4e4e-84c5-d2b834693c96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\atiny_mqtt">
+      <UniqueIdentifier>{48bfdf42-b7e6-4726-b47c-ea2424659149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fs">
+      <UniqueIdentifier>{bb5da5a0-817e-4a9b-b9f7-28e469d7a70f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\log">
+      <UniqueIdentifier>{4cc49c0a-be7a-418a-8df9-bfe78bb1575e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\nb_iot">
+      <UniqueIdentifier>{5a9f4e7b-d01a-4368-be74-b828369c4ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\osdepends">
+      <UniqueIdentifier>{5d4e3683-2fa2-46be-9a85-5179fec892bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ota">
+      <UniqueIdentifier>{537e7f13-e707-49d2-9163-fceaab31954f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sal">
+      <UniqueIdentifier>{99a5c3f1-c7a2-4e61-908b-297f2b283d50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sota">
+      <UniqueIdentifier>{378f3c4a-56ce-4711-8e5e-63afff730faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base">
+      <UniqueIdentifier>{1db01c60-33e5-45d8-9410-8dd395137f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\extended">
+      <UniqueIdentifier>{85b19edf-b68f-4d58-97eb-798732816d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\include">
+      <UniqueIdentifier>{541c7b3a-9b8d-4eaf-b978-b969f85bebfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\extended\include">
+      <UniqueIdentifier>{89d294ef-4055-4a58-a504-46e36d7c1a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\extended\tickless">
+      <UniqueIdentifier>{89e4bf34-754e-4658-8805-458f64b98584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\core">
+      <UniqueIdentifier>{35b7002b-6eba-4533-ac37-a03121f25f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\include">
+      <UniqueIdentifier>{3d50d244-2256-4883-8c4c-d229e2056c7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\ipc">
+      <UniqueIdentifier>{09f61a8e-ffd1-4026-8c89-68db62302cb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\mem">
+      <UniqueIdentifier>{a708e1dd-bc77-401a-a304-ceb8ba1b8f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\misc">
+      <UniqueIdentifier>{f581f886-1e62-4379-a9d8-b69fa5dc8660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\om">
+      <UniqueIdentifier>{89e6b623-a498-41a3-8298-8b8b39605e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\mem\bestfit">
+      <UniqueIdentifier>{0b286824-1548-4e31-8e5c-9b79893b95ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\mem\bestfit_little">
+      <UniqueIdentifier>{4f4a8e4c-78fc-4f54-b598-beb174e72b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\mem\common">
+      <UniqueIdentifier>{4d751cd8-6b9a-4b56-8777-47bab079c0b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\mem\membox">
+      <UniqueIdentifier>{9f60afa4-cd6d-49e0-9470-d3ed77e7d9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\base\mem\tlsf">
+      <UniqueIdentifier>{02d16a0c-d4ed-47e9-b6b0-6ae3f8510348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\test_suit">
+      <UniqueIdentifier>{99e56be8-9519-486e-954d-c364e728f89f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\cmockery">
+      <UniqueIdentifier>{c7940c56-d950-41a4-b9cf-cedaa96c6a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\test_agenttiny">
+      <UniqueIdentifier>{9d6bc77d-0d7f-4fc3-92c9-e9fddf14d8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\test_sota">
+      <UniqueIdentifier>{57399b07-dc3d-4a4d-ad74-b9fe8a4348d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC">
+      <UniqueIdentifier>{f6810ac3-27ce-4ecb-a5b9-eaf01041c5b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Src">
+      <UniqueIdentifier>{bb7e0a8b-11c5-4ecd-9380-32605085fca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers">
+      <UniqueIdentifier>{0d0cbed4-8432-40dd-89df-d38aa5237375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\GCC">
+      <UniqueIdentifier>{6ea5955a-7eda-4d9f-9ab6-49924fc91857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Inc">
+      <UniqueIdentifier>{4936ce11-b59d-47cc-8f96-3f93bdaef4f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\OS_CONFIG">
+      <UniqueIdentifier>{344e1150-49a2-4887-8715-536553d08ef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\CMSIS">
+      <UniqueIdentifier>{4c812d67-3c44-4fba-b5d0-d240633c0ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver">
+      <UniqueIdentifier>{98528af7-6826-4356-91e6-c9ef01dbecf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device">
+      <UniqueIdentifier>{977793da-3658-44bf-92eb-19c1d9157076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST">
+      <UniqueIdentifier>{7376913c-6d98-478c-b82d-072cef76174f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx">
+      <UniqueIdentifier>{f726e7a8-b6fe-418e-ab41-4cd0b9960c63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include">
+      <UniqueIdentifier>{f7e599c1-6218-45d5-9c71-4355fd679590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc">
+      <UniqueIdentifier>{0269759a-2a20-4960-8e61-36e2cd2a2f62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src">
+      <UniqueIdentifier>{2c1f611b-955e-41df-9aec-1006c4bfb25f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy">
+      <UniqueIdentifier>{7cfcc8aa-18a3-4bb9-92b5-3a17fe2f91df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osdepends\liteos">
+      <UniqueIdentifier>{ea659afb-ee7c-454b-a3c2-d08fa14fb5a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osdepends\liteos\cmsis">
+      <UniqueIdentifier>{5b2345f3-473a-46a2-a877-13b4b1cadf17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osdepends\liteos\cmsis\1.0">
+      <UniqueIdentifier>{ed8b0612-440f-4e9f-818a-cd1079044707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osdepends\liteos\cmsis\2.0">
+      <UniqueIdentifier>{a6011e2f-fbfd-4787-af2e-1ea0d2348821}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LiteOS\LICENSE" />
+    <None Include="..\..\LiteOS\README.md" />
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\gcc\los_dispatch_gcc.S">
+      <Filter>arch\arm\arm-m\cortex-m0\gcc</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\gcc\los_hw_exc_gcc.S">
+      <Filter>arch\arm\arm-m\cortex-m0\gcc</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\iar\los_dispatch_iar.S">
+      <Filter>arch\arm\arm-m\cortex-m0\iar</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\keil\los_dispatch_keil.S">
+      <Filter>arch\arm\arm-m\cortex-m0\keil</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\keil\los_hw_exc_keil.S">
+      <Filter>arch\arm\arm-m\cortex-m0\keil</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\los_exc.inc">
+      <Filter>arch\arm\arm-m\cortex-m0</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\los_exc.ph">
+      <Filter>arch\arm\arm-m\cortex-m0</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\msp430\src\los_dispatch_ccs.asm">
+      <Filter>arch\msp430\src</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\msp430\src\los_dispatch_iar.s43">
+      <Filter>arch\msp430\src</Filter>
+    </None>
+    <None Include="..\..\LiteOS\build\Makefile">
+      <Filter>build</Filter>
+    </None>
+    <None Include="..\..\LiteOS\components\connectivity\lwm2m\core\wakaama.cmake">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </None>
+    <None Include="..\..\LiteOS\components\connectivity\lwm2m\core\er-coap-13\LICENSE">
+      <Filter>components\connectivity\lwm2m\core\er-coap-13</Filter>
+    </None>
+    <None Include="..\..\LiteOS\components\fs\spiffs\README">
+      <Filter>components\fs\spiffs</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\Makefile">
+      <Filter>kernel</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\extended\include\los_tickless.ph">
+      <Filter>kernel\extended\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\extended\tickless\los_tickless.inc">
+      <Filter>kernel\extended\tickless</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\extended\Makefile">
+      <Filter>kernel\extended</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\Makefile">
+      <Filter>kernel\base</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\core\los_priqueue.inc">
+      <Filter>kernel\base\core</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\core\los_swtmr.inc">
+      <Filter>kernel\base\core</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\core\los_sys.inc">
+      <Filter>kernel\base\core</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\core\los_task.inc">
+      <Filter>kernel\base\core</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\core\los_tick.inc">
+      <Filter>kernel\base\core</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\core\los_timeslice.inc">
+      <Filter>kernel\base\core</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\core\Makefile">
+      <Filter>kernel\base\core</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_base.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_err.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_event.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_heap.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_list.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_membox.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_memcheck.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_memory.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_memstat.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_multipledlinkhead.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_mux.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_printf.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_priqueue.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_queue.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_sem.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_slab.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_swtmr.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_sys.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_task.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_tick.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_timeslice.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\include\los_typedef.ph">
+      <Filter>kernel\base\include</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\ipc\los_event.inc">
+      <Filter>kernel\base\ipc</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\ipc\los_mux.inc">
+      <Filter>kernel\base\ipc</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\ipc\los_queue.inc">
+      <Filter>kernel\base\ipc</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\ipc\los_sem.inc">
+      <Filter>kernel\base\ipc</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\ipc\Makefile">
+      <Filter>kernel\base\ipc</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\mem\Makefile">
+      <Filter>kernel\base\mem</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\mem\bestfit\los_memory.inc">
+      <Filter>kernel\base\mem\bestfit</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\mem\bestfit\los_multipledlinkhead.inc">
+      <Filter>kernel\base\mem\bestfit</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\mem\bestfit_little\Makefile">
+      <Filter>kernel\base\mem\bestfit_little</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\mem\common\los_memstat.inc">
+      <Filter>kernel\base\mem\common</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\mem\common\Makefile">
+      <Filter>kernel\base\mem\common</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\mem\tlsf\Makefile">
+      <Filter>kernel\base\mem\tlsf</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\misc\Makefile">
+      <Filter>kernel\base\misc</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\om\los_err.inc">
+      <Filter>kernel\base\om</Filter>
+    </None>
+    <None Include="..\..\LiteOS\kernel\base\om\Makefile">
+      <Filter>kernel\base\om</Filter>
+    </None>
+    <None Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\GCC\Makefile">
+      <Filter>targets\STM32F103VET6_NB_GCC\GCC</Filter>
+    </None>
+    <None Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\GCC\startup_stm32f103xe.s">
+      <Filter>targets\STM32F103VET6_NB_GCC\GCC</Filter>
+    </None>
+    <None Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\GCC\STM32F103VETx_FLASH.ld">
+      <Filter>targets\STM32F103VET6_NB_GCC\GCC</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m3\los_exc.inc">
+      <Filter>arch\arm\arm-m\cortex-m3</Filter>
+    </None>
+    <None Include="..\..\LiteOS\arch\arm\arm-m\cortex-m3\los_exc.ph">
+      <Filter>arch\arm\arm-m\cortex-m3</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\cortex-m0\los_exc.c">
+      <Filter>arch\arm\arm-m\cortex-m0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\src\los_hw.c">
+      <Filter>arch\arm\arm-m\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\src\los_hw_tick.c">
+      <Filter>arch\arm\arm-m\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\src\los_hwi.c">
+      <Filter>arch\arm\arm-m\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\arch\msp430\src\los_hw.c">
+      <Filter>arch\msp430\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\arch\msp430\src\los_hw_tick.c">
+      <Filter>arch\msp430\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\arch\msp430\src\los_hwi.c">
+      <Filter>arch\msp430\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\agenttiny.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_fota_manager.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_fota_state.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_rpt.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\connection.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\firmware_update.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_access_control.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_binary_app_data_container.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_connectivity_moni.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_connectivity_stat.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_device.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_firmware.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_location.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_security.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_server.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\platform_adapter.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\util_timer.c">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\flash_manager.c">
+      <Filter>components\connectivity\agent_tiny\atiny_mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\hmac.c">
+      <Filter>components\connectivity\agent_tiny\atiny_mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\mqtt_client.c">
+      <Filter>components\connectivity\agent_tiny\atiny_mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\block1.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\bootstrap.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\data.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\discover.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\json.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\liblwm2m.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\list.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\lwm2m_utils.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\management.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\objects.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\observe.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\packet.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\registration.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\tlv.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\transaction.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\uri.c">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\core\er-coap-13\er-coap-13.c">
+      <Filter>components\connectivity\lwm2m\core\er-coap-13</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\lwm2m\examples\shared\commandline.c">
+      <Filter>components\connectivity\lwm2m\examples\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\connectivity\nb_iot\los_nb_api.c">
+      <Filter>components\connectivity\nb_iot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\devfs\los_devfs.c">
+      <Filter>components\fs\devfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\los_fatfs.c">
+      <Filter>components\fs\fatfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\diskio.c">
+      <Filter>components\fs\fatfs\ff13b\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\ff.c">
+      <Filter>components\fs\fatfs\ff13b\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\ffsystem.c">
+      <Filter>components\fs\fatfs\ff13b\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\ffunicode.c">
+      <Filter>components\fs\fatfs\ff13b\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\kifs\los_kifs.c">
+      <Filter>components\fs\kifs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\ramfs\los_ramfs.c">
+      <Filter>components\fs\ramfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\los_spiffs.c">
+      <Filter>components\fs\spiffs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_cache.c">
+      <Filter>components\fs\spiffs\spiffs_git\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_check.c">
+      <Filter>components\fs\spiffs\spiffs_git\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_gc.c">
+      <Filter>components\fs\spiffs\spiffs_git\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_hydrogen.c">
+      <Filter>components\fs\spiffs\spiffs_git\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_nucleus.c">
+      <Filter>components\fs\spiffs\spiffs_git\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\fs\vfs\los_vfs.c">
+      <Filter>components\fs\vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\lib\cJSON\cJSON.c">
+      <Filter>components\lib\cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\lib\libc\errno.c">
+      <Filter>components\lib\libc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\lib\libc\malloc.c">
+      <Filter>components\lib\libc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\lib\libc\newlib_stub.c">
+      <Filter>components\lib\libc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\log\atiny_log.c">
+      <Filter>components\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\at_device\emtc_bg36\bg36.c">
+      <Filter>components\net\at_device\emtc_bg36</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\at_device\gprs_sim900a\sim900a.c">
+      <Filter>components\net\at_device\gprs_sim900a</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\at_device\nb_bc95\bc95.c">
+      <Filter>components\net\at_device\nb_bc95</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\at_device\wifi_esp8266\esp8266.c">
+      <Filter>components\net\at_device\wifi_esp8266</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\at_frame\at_api.c">
+      <Filter>components\net\at_frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\at_frame\at_main.c">
+      <Filter>components\net\at_frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\lwip\lwip_port\OS\ethernetif.c">
+      <Filter>components\net\lwip\lwip_port\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\lwip\lwip_port\OS\sys_arch.c">
+      <Filter>components\net\lwip\lwip_port\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\components\net\sal\atiny_socket.c">
+      <Filter>components\net\sal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\los_init.c">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\extended\tickless\los_tickless.c">
+      <Filter>kernel\extended\tickless</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_priqueue.c">
+      <Filter>kernel\base\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_swtmr.c">
+      <Filter>kernel\base\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_sys.c">
+      <Filter>kernel\base\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_task.c">
+      <Filter>kernel\base\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_tick.c">
+      <Filter>kernel\base\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\core\los_timeslice.c">
+      <Filter>kernel\base\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\ipc\los_event.c">
+      <Filter>kernel\base\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\ipc\los_mux.c">
+      <Filter>kernel\base\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\ipc\los_queue.c">
+      <Filter>kernel\base\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\ipc\los_sem.c">
+      <Filter>kernel\base\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\bestfit\los_memory.c">
+      <Filter>kernel\base\mem\bestfit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\bestfit\los_multipledlinkhead.c">
+      <Filter>kernel\base\mem\bestfit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\bestfit_little\los_heap.c">
+      <Filter>kernel\base\mem\bestfit_little</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\bestfit_little\los_memory.c">
+      <Filter>kernel\base\mem\bestfit_little</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\common\los_memcheck.c">
+      <Filter>kernel\base\mem\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\common\los_memstat.c">
+      <Filter>kernel\base\mem\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\common\los_slab.c">
+      <Filter>kernel\base\mem\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\common\los_slabmem.c">
+      <Filter>kernel\base\mem\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\membox\los_membox.c">
+      <Filter>kernel\base\mem\membox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\mem\tlsf\los_memory.c">
+      <Filter>kernel\base\mem\tlsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\misc\los_misc.c">
+      <Filter>kernel\base\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\kernel\base\om\los_err.c">
+      <Filter>kernel\base\om</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\tests\test_main.c">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\tests\test_sota\sota_test.c">
+      <Filter>tests\test_sota</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\tests\test_agenttiny\It_Los_Agenttiny.c">
+      <Filter>tests\test_agenttiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\tests\test_agenttiny\It_Los_Atiny_Bind.c">
+      <Filter>tests\test_agenttiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\tests\test_agenttiny\It_Los_Atiny_Data_Report.c">
+      <Filter>tests\test_agenttiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\tests\test_agenttiny\It_Los_Atiny_Init.c">
+      <Filter>tests\test_agenttiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\tests\test_suit\agenttiny_test.c">
+      <Filter>tests\test_suit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\tests\test_suit\fs_test.c">
+      <Filter>tests\test_suit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cec.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_crc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dac_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_eth.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_hcd.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2s.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_irda.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_iwdg.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_mmc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_msp_template.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_nand.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_nor.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pccard.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rtc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rtc_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sd.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_smartcard.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_sram.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_timebase_rtc_alarm_template.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_timebase_tim_template.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_usart.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_wwdg.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_adc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_crc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_dac.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_dma.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_exti.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_fsmc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_gpio.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_i2c.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_pwr.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_rcc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_rtc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_sdmmc.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_spi.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_tim.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usart.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_utils.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\at_hal.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\main.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\stm32f1xx_hal_msp.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\stm32f1xx_it.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\system_stm32f1xx.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Src\usart.c">
+      <Filter>targets\STM32F103VET6_NB_GCC\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\osdepends\liteos\atiny_osdep.c">
+      <Filter>osdepends\liteos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\osdepends\liteos\cmsis\cmsis_liteos.c">
+      <Filter>osdepends\liteos\cmsis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\osdepends\liteos\cmsis\1.0\cmsis_liteos1.c">
+      <Filter>osdepends\liteos\cmsis\1.0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\osdepends\liteos\cmsis\2.0\cmsis_liteos2.c">
+      <Filter>osdepends\liteos\cmsis\2.0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LiteOS\arch\arm\arm-m\cortex-m3\los_exc.c">
+      <Filter>arch\arm\arm-m\cortex-m3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\LiteOS\arch\arm\arm-m\include\los_exc.h">
+      <Filter>arch\arm\arm-m\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\arm-m\include\los_hw.h">
+      <Filter>arch\arm\arm-m\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\arm-m\include\los_hw_tick.h">
+      <Filter>arch\arm\arm-m\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\arm-m\include\los_hwi.h">
+      <Filter>arch\arm\arm-m\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\arm_common_tables.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\arm_const_structs.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\arm_math.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\cmsis_armcc.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\cmsis_armclang.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\cmsis_compiler.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\cmsis_gcc.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_armv8mbl.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_armv8mml.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm0.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm0plus.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm3.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm4.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm7.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm23.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_cm33.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_sc000.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\core_sc300.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\arm\common\cmsis\tz_context.h">
+      <Filter>arch\arm\common\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\msp430\include\los_hw.h">
+      <Filter>arch\msp430\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\msp430\include\los_hwi.h">
+      <Filter>arch\msp430\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\arch\msp430\src\ccsmacros.h">
+      <Filter>arch\msp430\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\agent_list.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_context.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_fota_manager.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_fota_state.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\atiny_rpt.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\connection.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\firmware_update.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\object_comm.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_lwm2m\util_timer.h">
+      <Filter>components\connectivity\agent_tiny\atiny_lwm2m</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\flash_manager.h">
+      <Filter>components\connectivity\agent_tiny\atiny_mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\agent_tiny\atiny_mqtt\hmac.h">
+      <Filter>components\connectivity\agent_tiny\atiny_mqtt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\core\internals.h">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\core\liblwm2m.h">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\core\liblwm2m_api.h">
+      <Filter>components\connectivity\lwm2m\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\core\er-coap-13\er-coap-13.h">
+      <Filter>components\connectivity\lwm2m\core\er-coap-13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\connectivity\lwm2m\examples\shared\commandline.h">
+      <Filter>components\connectivity\lwm2m\examples\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\diskio.h">
+      <Filter>components\fs\fatfs\ff13b\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\ff.h">
+      <Filter>components\fs\fatfs\ff13b\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\integer.h">
+      <Filter>components\fs\fatfs\ff13b\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\fs\fatfs\ff13b\source\default\ffconf.h">
+      <Filter>components\fs\fatfs\ff13b\source\default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs.h">
+      <Filter>components\fs\spiffs\spiffs_git\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\spiffs_nucleus.h">
+      <Filter>components\fs\spiffs\spiffs_git\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\fs\spiffs\spiffs_git\src\default\spiffs_config.h">
+      <Filter>components\fs\spiffs\spiffs_git\src\default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\lib\cJSON\cJSON.h">
+      <Filter>components\lib\cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\at_device\emtc_bg36\bg36.h">
+      <Filter>components\net\at_device\emtc_bg36</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\at_device\gprs_sim900a\sim900a.h">
+      <Filter>components\net\at_device\gprs_sim900a</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\at_device\wifi_esp8266\esp8266.h">
+      <Filter>components\net\at_device\wifi_esp8266</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\OS\ethernetif.h">
+      <Filter>components\net\lwip\lwip_port\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\OS\lwipopts.h">
+      <Filter>components\net\lwip\lwip_port\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\bpstruct.h">
+      <Filter>components\net\lwip\lwip_port\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\cc.h">
+      <Filter>components\net\lwip\lwip_port\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\cpu.h">
+      <Filter>components\net\lwip\lwip_port\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\epstruct.h">
+      <Filter>components\net\lwip\lwip_port\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\init.h">
+      <Filter>components\net\lwip\lwip_port\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\lib.h">
+      <Filter>components\net\lwip\lwip_port\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\perf.h">
+      <Filter>components\net\lwip\lwip_port\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\components\net\lwip\lwip_port\arch\sys_arch.h">
+      <Filter>components\net\lwip\lwip_port\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\include\atiny_error.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_base.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_compiler.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_config.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_err.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_errno.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_event.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_heap.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_list.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_membox.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_memcheck.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_memory.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_mux.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_queue.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_sem.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_slab.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_swtmr.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_sys.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_task.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_tick.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_tickless.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\kernel\include\los_typedef.h">
+      <Filter>kernel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\tests\test_sota\sota_test.h">
+      <Filter>tests\test_sota</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\tests\test_agenttiny\test_agenttiny.h">
+      <Filter>tests\test_agenttiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\tests\test_suit\regresstest.h">
+      <Filter>tests\test_suit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103x6.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xg.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\CMSIS\Device\ST\STM32F1xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32_assert_template.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_adc_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_can_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cec.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_conf_template.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_crc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dac_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_eth.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2s.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_irda.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_iwdg.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nand.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_nor.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pccard.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rtc_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sd.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_smartcard.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_sram.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_usart.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_wwdg.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_adc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_bus.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_cortex.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_crc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_dac.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_dma.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_exti.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_fsmc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_gpio.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_i2c.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_iwdg.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_pwr.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_rcc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_rtc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_sdmmc.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_spi.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_system.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_tim.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usart.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_utils.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_wwdg.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\at_hal.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\main.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\stm32f1xx_hal_conf.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\stm32f1xx_it.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\Inc\usart.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\OS_CONFIG\los_builddef.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\OS_CONFIG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\OS_CONFIG\los_printf.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\OS_CONFIG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\targets\STM32F103VET6_NB_GCC\OS_CONFIG\target_config.h">
+      <Filter>targets\STM32F103VET6_NB_GCC\OS_CONFIG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\osdepends\liteos\cmsis\cmsis_os.h">
+      <Filter>osdepends\liteos\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\osdepends\liteos\cmsis\1.0\cmsis_os1.h">
+      <Filter>osdepends\liteos\cmsis\1.0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LiteOS\osdepends\liteos\cmsis\2.0\cmsis_os2.h">
+      <Filter>osdepends\liteos\cmsis\2.0</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

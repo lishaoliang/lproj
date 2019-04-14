@@ -54,3 +54,21 @@ go install golang.org/x/lint/golint
 ```
 gopath.tar.gz
 ```
+
+* 配置工具,打开工作区settings.json:(.vscode/settings.json)
+
+```
+{
+    "editor.fontSize": 16,
+    "files.autoSave": "onFocusChange",
+    "go.buildOnSave": true,
+    "go.lintOnSave": true,
+    "go.vetOnSave": true,
+    "go.buildFlags": [],
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.useCodeSnippetsOnFunctionSuggest": false,  
+    "go.formatTool": "goreturns",
+    "go.goroot": "C:\\go"
+}
+```
